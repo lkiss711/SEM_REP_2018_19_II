@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1559898410062.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "B7683F0B",
+    "lastKnownWriteTime" : 1559900643,
+    "last_content_update" : 1559900643921,
+    "path" : "C:/DE_IDI/SEMESTER_REPORT_2018_19_II/SEM_REP/FABOD.R",
+    "project_path" : "FABOD.R",
+    "properties" : {
+        "cursorPosition" : "276,0",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
