@@ -55,6 +55,8 @@ WSH_ONE_DAY <- spread(WSH_ONE_DAY,"ruleid","inc_ratio",fill = 0)
 # apply to Fast ABOD to a dataset
 res.FABOD_WSH <- Func.FBOD(data=WSH_ONE_DAY[,c("MUTING_VOLTE_VOICE","GARBLING_VOLTE_VOICE","SOFT_DROP_DUE_TO_MEDIA_STOP_VOLTE_IMS")],iter = 10,k.nn = 5)
 
+# apply to an original ABOD to a dataset, it is commented because of the long running time
+# res.ABOD_WSH <- Func.ABOD(data=WSH_ONE_DAY[,c("MUTING_VOLTE_VOICE","GARBLING_VOLTE_VOICE","SOFT_DROP_DUE_TO_MEDIA_STOP_VOLTE_IMS")], basic=FALSE, perc=0.2)
 
 
 
@@ -138,6 +140,8 @@ SEATT_ONE_DAY <- spread(SEATT_ONE_DAY,"ruleid","inc_ratio",fill = 0)
 
 
 res.FABOD_SEATT <- Func.FBOD(data=SEATT_ONE_DAY[,c("MUTING_VOLTE_VOICE","GARBLING_VOLTE_VOICE","SOFT_DROP_DUE_TO_MEDIA_STOP_VOLTE_IMS")], iter = 10,k.nn = 5)
+# res.ABOD_SEATT <- Func.ABOD(data=SEATT_ONE_DAY[,c("MUTING_VOLTE_VOICE","GARBLING_VOLTE_VOICE","SOFT_DROP_DUE_TO_MEDIA_STOP_VOLTE_IMS")], basic=FALSE, perc=0.2)
+
 data.temp <- SEATT_ONE_DAY[,c("model_iOS","MUTING_VOLTE_VOICE","GARBLING_VOLTE_VOICE","SOFT_DROP_DUE_TO_MEDIA_STOP_VOLTE_IMS")]
 
 
@@ -215,6 +219,8 @@ HAW_ONE_DAY <- spread(HAW_ONE_DAY,"ruleid","inc_ratio",fill = 0)
 
 
 res.FABOD_HAW <- Func.FBOD(data=HAW_ONE_DAY[,c("MUTING_VOLTE_VOICE","GARBLING_VOLTE_VOICE","SOFT_DROP_DUE_TO_MEDIA_STOP_VOLTE_IMS")], iter = 10, k.nn = 5)
+#res.ABOD_HAW <- Func.ABOD(data=HAW_ONE_DAY[,c("MUTING_VOLTE_VOICE","GARBLING_VOLTE_VOICE","SOFT_DROP_DUE_TO_MEDIA_STOP_VOLTE_IMS")], basic=FALSE, perc=0.2)
+
 data.temp <- HAW_ONE_DAY[,c("model_iOS","MUTING_VOLTE_VOICE","GARBLING_VOLTE_VOICE","SOFT_DROP_DUE_TO_MEDIA_STOP_VOLTE_IMS")]
 
 
